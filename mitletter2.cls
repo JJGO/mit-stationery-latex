@@ -79,7 +79,7 @@
 
 \sbox{\place}
      {\parbox[t]{7.29cm}
-       {\setlength{\baselineskip}{9.2pt}{\boldfont Office name} \\ {\regularfont Building X00-000}}}
+       {\setlength{\baselineskip}{9.2pt}{\boldfont \officename} \\ {\regularfont Building X00-000}}}
 
 \sbox{\contactinfo}
      {\parbox[t]{3.59cm}
