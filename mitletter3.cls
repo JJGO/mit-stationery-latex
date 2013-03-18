@@ -6,6 +6,10 @@
 \usepackage[dvips]{graphics}
 \usepackage[businessenvelope]{envlab}
 
+\usepackage{color}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\definecolor{mitred}{RGB}{128,0,0}
+
 \raggedright
 
 \setlength{\topmargin}{-.80in}
@@ -69,14 +73,14 @@
 
 
 \sbox{\OfficeStuff}
-     {\parbox[t]{7.41cm}{\setlength{\baselineskip}{9.2pt}\boldfont \officename\\\associateofficename}}
+     {\parbox[t]{7.41cm}{\setlength{\baselineskip}{9.2pt}\boldfont{\officename\\{\color{mitred} \associateofficename}}}}
 
 \sbox{\MITlogo}
      {\parbox[t]{2.19cm}
-       {\raisebox{-7mm}{\scalebox{.3}{\includegraphics{mitlogo.eps}}}}}
+       {\raisebox{-7mm}{\scalebox{.3}{\includegraphics{mitlogo-clr.eps}}}}}
 \sbox{\contactinfo}
      {\parbox[t]{7.37cm}
-       {\setlength{\baselineskip}{9.2pt}\boldfont{Massachusetts Institute of Technology}\\
+       {\setlength{\baselineskip}{9.2pt}{\boldfont{\color{mitred} Massachusetts Institute of Technology}}\\
 	 \regularfont{77 Massachusetts Avenue, \roomnumber\\
 	   Cambridge, Massachusetts 02139-4307}}}
 \sbox{\phonestuff}
@@ -85,6 +89,7 @@
 \sbox{\nameandtitle}
      {\parbox[t]{3in}{\setlength{\baselineskip}{9.2pt}\boldfont{\person }\\\regularfont{\ID }}}
 \newsavebox{\header}
+\arrayrulecolor{mitred}
 \setlength{\arrayrulewidth}{2pt}
 \sbox{\header}
      {\parbox[t]{\textwidth}
@@ -98,11 +103,11 @@
 \newsavebox{\footer}
 
 \sbox{\footer}
-     {\parbox[t]{\textwidth}{\rule{\textwidth}{3mm}}}
+     {\parbox[t]{\textwidth}{\color{mitred} \rule{\textwidth}{3mm}}}
 \newsavebox{\envpic}
 \sbox{\envpic}
      {\parbox[t]{.75in}
-       {\scalebox{.33}{\includegraphics{mitlogo.eps}}}}
+       {\scalebox{.33}{\includegraphics{mitlogo-clr.eps}}}}
 \newsavebox{\envtop}
 \sbox{\envtop}
      {\parbox[t]{2.5in}
@@ -116,7 +121,7 @@
 \newsavebox{\envelope}
 \sbox{\envelope}
      {\parbox[t]{3.25in}
-       {\hspace{.75in}\raisebox{.125in}{\usebox{\envtop}}\\\rule{3.25in}{2pt}\\\\\usebox{\envpic}\usebox{\envbottom}}}
+       {\hspace{.75in}\raisebox{.125in}{\usebox{\envtop}}\\\textcolor{mitred}{\rule{3.25in}{2pt}}\\\\\usebox{\envpic}\usebox{\envbottom}}}
 
 \renewcommand{\returnaddress}{\protect\usebox{\envelope}}
 
