@@ -7,6 +7,10 @@
 \usepackage[dvips]{graphics}
 \usepackage[businessenvelope]{envlab}
 
+\usepackage{color}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\definecolor{mitred}{RGB}{128,0,0}
+
 \raggedright
 \setlength{\topmargin}{-.80in}
 \setlength{\oddsidemargin}{-.25in}
@@ -75,11 +79,11 @@
 
 \sbox{\MassInstTech}
      {\parbox[b]{160mm}
-       {\setlength{\baselineskip}{9.2pt}\begin{center}\scalebox{.4}{\includegraphics*{mitlogo.eps}}\\[9.2pt]\boldfont{Massachusetts Institute of Technology}\\\vspace{9.2pt}\regularfont{\person}\\\IDfont{\ID}\end{center}}}
+       {\setlength{\baselineskip}{9.2pt}\begin{center}\scalebox{.4}{\includegraphics*{mitlogo-clr.eps}}\\[9.2pt]\boldfont{\color{mitred} Massachusetts Institute of Technology}\\\vspace{9.2pt}\regularfont{\person}\\\IDfont{\ID}\end{center}}}
 
 \sbox{\place}
      {\parbox[t]{7.29cm}
-       {\setlength{\baselineskip}{9.2pt}{\boldfont \officename} \\ {\regularfont Building X00-000}}}
+       {\setlength{\baselineskip}{9.2pt}{\boldfont \color{mitred} \officename} \\ {\regularfont Building X00-000}}}
 
 \sbox{\contactinfo}
      {\parbox[t]{3.59cm}
@@ -103,7 +107,7 @@
 
 \newsavebox{\envelope}
 \sbox{\envelope}
-     {\parbox[t]{6cm}{\setlength{\baselineskip}{9.2pt}\boldfont{\officename}\\\\\\\hspace*{.5in}\scalebox{.25}{\includegraphics*{mitlogo.eps}}\\\\\boldfont{Massachusetts Institute of Technology}\\\regularfont{77 Massachusetts Avenue, Building \roomnumber}\\\regularfont{Cambridge, MA 02139-4307}}}
+     {\parbox[t]{6cm}{\setlength{\baselineskip}{9.2pt}\boldfont{\officename}\\\\\\\hspace*{.5in}\scalebox{.25}{\includegraphics*{mitlogo-clr.eps}}\\\\\boldfont{Massachusetts Institute of Technology}\\\regularfont{77 Massachusetts Avenue, Building \roomnumber}\\\regularfont{Cambridge, MA 02139-4307}}}
 
 \renewcommand{\returnaddress}{\protect\usebox{\envelope}}
 
