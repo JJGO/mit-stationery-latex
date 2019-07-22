@@ -50,7 +50,7 @@
   {\raggedright \toname \\ \toaddress \par}%
   \vspace{2\parskip}%
   #1\marginpar[\hfill test]\par\nobreak}
-\renewcommand{\ps@headings}{% 
+\renewcommand{\ps@headings}{%
   \let\@oddfoot\@empty\let\@evenfoot\@empty
       \def\@oddhead{\slshape\headtoname{} \ignorespaces\toname
                     \@date
@@ -79,7 +79,7 @@
 
 \sbox{\MassInstTech}
      {\parbox[b]{160mm}
-       {\setlength{\baselineskip}{9.2pt}\begin{center}\scalebox{.4}{\includegraphics*{mitlogo-clr.eps}}\\[9.2pt]\boldfont{\color{mitred} Massachusetts Institute of Technology}\\\vspace{9.2pt}\regularfont{\person}\\\IDfont{\ID}\end{center}}}
+       {\setlength{\baselineskip}{9.2pt}\begin{center}\scalebox{.4}{\includegraphics*{mitlogo-clr.pdf}}\\[9.2pt]\boldfont{\color{mitred} Massachusetts Institute of Technology}\\\vspace{9.2pt}\regularfont{\person}\\\IDfont{\ID}\end{center}}}
 
 \sbox{\place}
      {\parbox[t]{7.29cm}
@@ -97,7 +97,7 @@
        {\setlength{\baselineskip}{9.2pt}\regularfont{77 Massachusetts Avenue\\
 	   Cambridge, Massachusetts\\
 	   02139-4307}}}
-	   
+
 
 \newsavebox{\footer}
 %put it all together
@@ -107,7 +107,7 @@
 
 \newsavebox{\envelope}
 \sbox{\envelope}
-     {\parbox[t]{6cm}{\setlength{\baselineskip}{9.2pt}\boldfont{\officename}\\\\\\\hspace*{.5in}\scalebox{.25}{\includegraphics*{mitlogo-clr.eps}}\\\\\boldfont{Massachusetts Institute of Technology}\\\regularfont{77 Massachusetts Avenue, Building \roomnumber}\\\regularfont{Cambridge, MA 02139-4307}}}
+     {\parbox[t]{6cm}{\setlength{\baselineskip}{9.2pt}\boldfont{\officename}\\\\\\\hspace*{.5in}\scalebox{.25}{\includegraphics*{mitlogo-clr.pdf}}\\\\\boldfont{Massachusetts Institute of Technology}\\\regularfont{77 Massachusetts Avenue, Building \roomnumber}\\\regularfont{Cambridge, MA 02139-4307}}}
 
 \renewcommand{\returnaddress}{\protect\usebox{\envelope}}
 
