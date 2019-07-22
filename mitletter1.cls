@@ -27,7 +27,7 @@
 \DeclareFixedFont{\italicfont}{OT1}{cmr}{m}{it}{10}
 
 
-\renewcommand{\ps@headings}{% 
+\renewcommand{\ps@headings}{%
   \let\@oddfoot\@empty\let\@evenfoot\@empty
       \def\@oddhead{\slshape\headtoname{} \ignorespaces\toname
                     \@date
@@ -45,7 +45,7 @@
   \vspace{2\parskip}%
   {\raggedright \toname \\ \toaddress \par}%
   \vspace{2\parskip}%
-  #1\par\nobreak\reversemarginpar\marginpar{\hspace*{.35in}\raisebox{.2in}{\scalebox{.33}{\includegraphics*{mitlogo-clr.eps}}}\normalmarginpar}}
+  #1\par\nobreak\reversemarginpar\marginpar{\hspace*{.35in}\raisebox{.2in}{\scalebox{.33}{\includegraphics*{mitlogo-clr.pdf}}}\normalmarginpar}}
 \renewcommand*{\signature}[1]{\def\fromsig{\italicfont #1}}
 \newcommand{\officename}{Office Name}
 \newcommand{\associateofficename}{Associate Office Name}
@@ -86,7 +86,7 @@
 
 \newsavebox{\envelope}
 \sbox{\envelope}
-     {\parbox[t]{7cm}{\setlength{\baselineskip}{9.2pt}\boldfont{\officename\\\associateofficename\\\\Massachusetts Institute of Technology}\\\regularfont{77 Massachusetts Avenue, Building \roomnumber} \\\regularfont{Cambridge, MA 02139-4307} \\\\\\\\\\\\\\\\ \scalebox{.30}{\includegraphics*{mitlogo-clr.eps}}}}
+     {\parbox[t]{7cm}{\setlength{\baselineskip}{9.2pt}\boldfont{\officename\\\associateofficename\\\\Massachusetts Institute of Technology}\\\regularfont{77 Massachusetts Avenue, Building \roomnumber} \\\regularfont{Cambridge, MA 02139-4307} \\\\\\\\\\\\\\\\ \scalebox{.30}{\includegraphics*{mitlogo-clr.pdf}}}}
 
 \renewcommand{\returnaddress}{\protect\usebox{\envelope}}
 
