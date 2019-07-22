@@ -37,7 +37,7 @@
   {\raggedright \toname \\ \toaddress \par}%
   \vspace{2\parskip}%
   #1\par\nobreak}
-\renewcommand{\ps@headings}{% 
+\renewcommand{\ps@headings}{%
   \let\@oddfoot\@empty\let\@evenfoot\@empty
       \def\@oddhead{\slshape\headtoname{} \ignorespaces\toname
                     \@date
@@ -77,7 +77,7 @@
 
 \sbox{\MITlogo}
      {\parbox[t]{2.19cm}
-       {\raisebox{-7mm}{\scalebox{.3}{\includegraphics{mitlogo-clr.eps}}}}}
+       {\raisebox{-7mm}{\scalebox{.3}{\includegraphics{mitlogo-clr.pdf}}}}}
 \sbox{\contactinfo}
      {\parbox[t]{7.37cm}
        {\setlength{\baselineskip}{9.2pt}{\boldfont{\color{mitred} Massachusetts Institute of Technology}}\\
@@ -107,7 +107,7 @@
 \newsavebox{\envpic}
 \sbox{\envpic}
      {\parbox[t]{.75in}
-       {\scalebox{.33}{\includegraphics{mitlogo-clr.eps}}}}
+       {\scalebox{.33}{\includegraphics{mitlogo-clr.pdf}}}}
 \newsavebox{\envtop}
 \sbox{\envtop}
      {\parbox[t]{2.5in}
